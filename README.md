@@ -1,5 +1,6 @@
 # chess-ai-infra
 
+<<<<<<< HEAD
 PR-04: Global Terraform (remote state + VPC)
 
 ## Stacks
@@ -22,3 +23,5 @@ Default: `ap-south-1`. Change via `-var 'aws_region=...'`.
      -var 'aws_region=ap-south-1' \
      -var 'state_bucket_name=<globally-unique-bucket-name>' \
      -var 'lock_table_name=chess-ai-tf-lock'
+=======
+>>>>>>> origin/main
