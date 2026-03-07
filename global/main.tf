@@ -6,7 +6,7 @@ locals {
     for i in range(var.az_count) : cidrsubnet(var.vpc_cidr, 3, i)  # /19
   ]
   public_subnets = [
-    for i in range(var.az_count) : cidrsubnet(var.vpc_cidr, 3, i + 8) # /19 offset
+    for i in range(var.az_count) : cidrsubnet(var.vpc_cidr, 3, i + var.az_count) # /19 offset
   ]
 }
 
