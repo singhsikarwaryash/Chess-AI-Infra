@@ -1,0 +1,11 @@
+Outputs:
+
+private_subnets = [
+  "subnet-0ae74c83ec17a251b",
+  "subnet-0c357b6b350148fc8",
+]
+public_subnets = [
+  "subnet-04126f7f6a512f2d5",
+  "subnet-060fafa6a1aefd5a0",
+]
+vpc_id = "vpc-0f4c27e5e2e24cc6e"

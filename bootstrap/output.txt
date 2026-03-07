@@ -1,0 +1,2 @@
+lock_table_name = "chess-ai-tf-lock"
+state_bucket_name = "chess-ai-tfstate-1772883787"
