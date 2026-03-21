@@ -4,7 +4,7 @@ output "cluster_name" {
 }
 
 output "cluster_endpoint" {
-  value       = data.aws_eks_cluster.this.endpoint
+  value       = module.eks.cluster_endpoint
   description = "EKS API server endpoint"
 }
 
@@ -15,10 +15,10 @@ output "oidc_provider_arn" {
 
 output "lb_controller_role_arn" {
   value       = module.lb_controller_irsa.iam_role_arn
-  description = "IAM role ARN used by AWS Load Balancer Controller"
+  description = "IAM Role ARN used by AWS Load Balancer Controller"
 }
 
 output "managed_node_groups" {
   value       = module.eks.eks_managed_node_groups
-  description = "Managed node groups"
+  description = "Details of managed node groups"
 }
